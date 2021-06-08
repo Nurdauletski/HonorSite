@@ -1,0 +1,91 @@
+.about {
+    background-color: $purple;
+    padding-top: 55px;
+    padding-bottom: 55px;
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .top {
+        &__num {
+            h1 {
+                font-size: 350px;
+                font-family: 'Abraham';
+                text-transform: uppercase;
+                color: $yellow;
+            }
+        }
+        &__text {
+            z-index: 10;
+            margin-left: 100px;
+            h1 {
+                font-size: 90px;
+                color: $white;
+                text-transform: uppercase;
+            }
+            p {
+                font-size: 30px;
+                color: $white;
+                text-transform: uppercase;
+            }
+        }
+        &__img {
+            z-index: 1;
+            img {
+                
+            }
+        }
+    }
+    &__center {
+
+    }
+    .center {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 70px;
+        h1 {
+            font-size: 100px;
+            color: $white;
+        }
+        p {
+            width: 790px;
+            font-size: 20px;
+            color: $white;
+            font-family: 'Poppins';
+        }
+    }
+    &__bottom {
+        margin-top: 80px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .bottom__block {
+        width: 330px;
+        &--img {
+            
+        }
+        &--title {
+            position: relative;
+            font-size: 30px;
+            color: $yellow;
+            text-transform: uppercase;
+            &::before {
+                position: absolute;
+                content: '';
+                bottom: -15px;
+                width: 45px;
+                height: 1px;
+                background-color: $white;
+            }
+        }
+        &--text {
+            margin-top: 50px;
+            font-family: 'Poppins';
+            font-size: 16px;
+            line-height: 1.6rem;
+            color: $white;
+        }
+    }
+}

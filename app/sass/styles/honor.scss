@@ -1,0 +1,42 @@
+.honor {
+    margin-top: 70px;
+    display: flex;
+    &__num {
+        h1 {
+            font-size: 350px;
+            font-family: 'Abraham';
+            text-transform: uppercase;
+            color: $black;
+        }
+    }
+    &__text {
+        z-index: 10;
+        margin-left: 100px;
+        float: right;
+        h1 {
+            font-size: 90px;
+            color: $black;
+            text-transform: uppercase;
+        }
+        p {
+            font-size: 30px;
+            color: $black;
+            text-transform: uppercase;
+        }
+    }
+    &__img {
+        z-index: 1;
+        img {
+            
+        }
+    }
+}
+.woods {
+    overflow: hidden;
+    height: 1100px;
+    width: 100%;
+    img {
+        object-fit: cover;
+        width: 100%;
+    }
+}

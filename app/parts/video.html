@@ -1,0 +1,33 @@
+<script>
+    function changeWidth() {
+    document.getElementById('video__button--parent').style.width = '180px';
+    document.getElementById('video__button--parent').style.height = '180px';
+
+    document.getElementById('video__button').style.width = '120px';
+    document.getElementById('video__button').style.height = '120px';
+  }
+  function reChangeWidth() {
+    document.getElementById('video__button--parent').style.width = '160px';
+    document.getElementById('video__button--parent').style.height = '160px';
+
+    document.getElementById('video__button').style.width = '90px';
+    document.getElementById('video__button').style.height = '90px';
+  }
+</script>
+<div class="video">
+    <video class="video__media" id="video__media" src="../img/video.mp4" loop>
+    </video>
+    <div class="video__image">
+        <img src="../img/video__image.png" alt="">
+        <div class="video__text">
+          <h1 class="video__text--title">We love our clients</h1>
+          <p class="video__text--descr">We take provide in delivering Intelligent Designs and Engaging Experiences for
+            clients all over the World.</p>
+        </div>
+    </div>
+    <div class="video__button--parent" id="video__button--parent" onmouseover="changeWidth()" onmouseout="reChangeWidth()">
+            
+    </div>
+    <div class="video__button" id="video__button">
+    </div>
+</div>

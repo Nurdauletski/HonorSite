@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@font-face {
+    font-family: 'Abraham';
+    src: url('../fonts/Abraham.eot');
+    src: url('../fonts/Abraham.eot') format('embedded-opentype'),
+    url('../fonts/Abraham.woff') format('woff'),
+    url('../fonts/Abraham.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+body {
+    font-family: 'Abraham';
+}
+.container {
+    width: 1280px;
+    margin: 0 auto;
+}
+.btn-reset {
+    border: none;
+}
+@import './styles/vars.scss';
+@import './styles/header.scss';
+@import './styles/about.scss';
+@import './styles/video.scss';
+@import './styles/honor.scss';
+@import './styles/comments.scss';
+@import './styles/footer.scss';

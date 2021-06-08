@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.min.css">
+</head>
+<body>
+    <system.webServer>
+        <staticContent>
+          <remove fileExtension=".woff" /> <!-- In case IIS already has this mime type -->
+          <mimeMap fileExtension=".woff" mimeType="font/woff" />
+        </staticContent>    
+      </system.webServer>
+    <!-- HEADER  -->
+        @@include('./parts/header.html')
+    <!-- END_HEADER -->
+
+    <!-- ABOUT  -->
+    @@include('./parts/about.html')
+    <!-- END_ABOUT -->
+
+    <!-- VIDEO  -->
+    @@include('./parts/video.html')
+    <!-- END_VIDEO -->
+
+      <!-- HONOR  -->
+      @@include('./parts/honor.html')
+      <!-- END_HONOR -->
+
+      <!-- COMMENTS  -->
+      @@include('./parts/comments.html')
+      <!-- END_COMMENTS -->
+
+      <!-- COMMENTS  -->
+      @@include('./parts/footer.html')
+      <!-- END_COMMENTS -->
+    <script src="./js/main.min.js"></script>
+</body>
+</html>

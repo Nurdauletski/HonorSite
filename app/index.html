@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.min.css">
+</head>
+<body>
+    <system.webServer>
+        <staticContent>
+          <remove fileExtension=".woff" /> <!-- In case IIS already has this mime type -->
+          <mimeMap fileExtension=".woff" mimeType="font/woff" />
+        </staticContent>    
+      </system.webServer>
+    <!-- HEADER  -->
+        <div class="header">
+    <div class="container">
+        <div class="header__wrapper">
+            <div class="header__logo">
+                <img src="../img/unity.png" alt="">
+            </div>
+            <div class="header__nav nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">About Us</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Services</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Portfolio</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Blog</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Shop</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header__text">
+                <h1 class="header__text--title">
+                    Honor the datails
+                </h1>
+                <p class="header__text--descr">
+                    We bring your products or services across in ways
+                </p>
+                <p class="header__text--descr">
+that make people feel good as they engage with your business
+                </p>
+            </div>
+            <div class="header__scroll">
+                <div class="header__scroll--text"><h1>SCROLL</h1></div>
+                <div>
+                    <img src="../img/Scroll.png" alt="">
+                </div>
+            </div>
+            <div class="header__box">
+                
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- END_HEADER -->
+
+    <!-- ABOUT  -->
+    <div class="about">
+    <div class="container">
+        <div class="about__top top">
+            <div class="top__num">
+                <h1>01.</h1>
+            </div>
+            <div class="top__text">
+                <h1>Actives<br>active attention</h1>
+                <p>That’s why we invent, and build digital campaigns</p>
+            </div>
+            <div class="top__img">
+                <img src="../img/brush.png" alt="">
+            </div>
+        </div>
+        <div class="about__center center">
+            <h1>Complexity<br>
+                should be<br>
+                secret</h1>
+                <p>We know you have a story to tell. You want the world to embrace your incredible ideas, products, and services. Trouble is, you're not sure about the best way to get your message across. No problem. We do.
+                </p>
+
+        </div>
+        <div class="about__bottom bottom">
+            <div class="bottom__block">
+                <div class="bottom__block--img">
+                    <img src="" alt="">
+                </div>
+                <h1 class="bottom__block--title">
+                    Handmade Layouts
+                </h1>
+                <p class="bottom__block--text">
+                    Curabitur sit amet suscipit  sagittis est. Ut acet nisi porttitor vestibulum. Donec a laoreet mi, at pretium lectus. 
+                </p>
+
+            </div>
+            <div class="bottom__block">
+                <div class="bottom__block--img">
+                    <img src="" alt="">
+                </div>
+                <h1 class="bottom__block--title">
+                    Handmade Layouts
+                </h1>
+                <p class="bottom__block--text">
+                    Curabitur sit amet suscipit  sagittis est. Ut acet nisi porttitor vestibulum. Donec a laoreet mi, at pretium lectus. 
+                </p>
+            </div>
+            <div class="bottom__block">
+                <div class="bottom__block--img">
+                    <img src="" alt="">
+                </div>
+                <h1 class="bottom__block--title">
+                    Handmade Layouts
+                </h1>
+                <p class="bottom__block--text">
+                    Curabitur sit amet suscipit  sagittis est. Ut acet nisi porttitor vestibulum. Donec a laoreet mi, at pretium lectus. 
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- END_ABOUT -->
+
+    <!-- VIDEO  -->
+    <script>
+    function changeWidth() {
+    document.getElementById('video__button--parent').style.width = '180px';
+    document.getElementById('video__button--parent').style.height = '180px';
+
+    document.getElementById('video__button').style.width = '120px';
+    document.getElementById('video__button').style.height = '120px';
+  }
+  function reChangeWidth() {
+    document.getElementById('video__button--parent').style.width = '160px';
+    document.getElementById('video__button--parent').style.height = '160px';
+
+    document.getElementById('video__button').style.width = '90px';
+    document.getElementById('video__button').style.height = '90px';
+  }
+</script>
+<div class="video">
+    <video class="video__media" id="video__media" src="../img/video.mp4" loop>
+    </video>
+    <div class="video__image">
+        <img src="../img/video__image.png" alt="">
+        <div class="video__text">
+          <h1 class="video__text--title">We love our clients</h1>
+          <p class="video__text--descr">We take provide in delivering Intelligent Designs and Engaging Experiences for
+            clients all over the World.</p>
+        </div>
+    </div>
+    <div class="video__button--parent" id="video__button--parent" onmouseover="changeWidth()" onmouseout="reChangeWidth()">
+            
+    </div>
+    <div class="video__button" id="video__button">
+    </div>
+</div>
+    <!-- END_VIDEO -->
+
+      <!-- HONOR  -->
+      <div class="container">
+    <div class="honor">
+        <div class="honor__img">
+            <img src="../img/brush.png" alt="">
+        </div>
+        <div class="honor__text">
+                <h1>Honor<br>the datails</h1>
+                <p>That’s why we invent, and build digital campaigns</p>
+        </div>
+        <div class="honor__num">
+                <h1>02.</h1>
+        </div>
+    </div>    
+</div>
+<div class="woods">
+    <img src="../img/woods.jpg" alt="">
+</div>
+
+      <!-- END_HONOR -->
+
+      <!-- COMMENTS  -->
+      <div class="container">
+    <div class="comments">
+        <h1 class="comments__title">
+            Global company with a local feel
+        </h1>
+        <p class="comments__text">
+            We help forward-thinking clients succeed in digital culture
+            with work that invites active attention.
+        </p>
+        <div class="comments__line">
+        </div>
+        <div class="comments__group customers">
+            <div class="customers__group">
+                <div class="customers__group--img">
+                    <img src="../img/av1.png" alt="">
+                </div>
+                <div class="customers__group--stars">
+                    <img src="../img/stars.png" alt="">
+                </div>
+                <div class="customers__group--text">
+                    <p>“ Thanks so much for the awesome customer service. So many companies, large and small, have a lot to learn from you. Great job! ”
+                    </p>
+                </div>
+                <h1 class="customers__group--title">
+                    Gregory Bradley
+                </h1>
+                <h2 class="customers__group--address">
+                    NewYork - Usa
+                </h2>
+            </div>
+            <div class="customers__group">
+                <div class="customers__group--img">
+                    <img src="../img/av2.png" alt="">
+                </div>
+                <div class="customers__group--stars">
+                    <img src="../img/stars.png" alt="">
+                </div>
+                <div class="customers__group--text">
+                    <p>“ A great agency who are not only flexible, efficient and professional but a group of people who really care about delivering results for you. ”
+                    </p>
+                </div>
+                <h1 class="customers__group--title">
+                    Gregory Bradley
+                </h1>
+                <h2 class="customers__group--address">
+                    NewYork - Usa
+                </h2>
+            </div>
+            <div class="customers__group">
+                <div class="customers__group--img">
+                    <img src="../img/av3.png" alt="">
+                </div>
+                <div class="customers__group--stars">
+                    <img src="../img/stars.png" alt="">
+                </div>
+                <div class="customers__group--text">
+                    <p>“ The quality of product and more importantly, customer service provided means we keep coming back for more!”
+                    </p>
+                </div>
+                <h1 class="customers__group--title">
+                    Gregory Bradley
+                </h1>
+                <h2 class="customers__group--address">
+                    NewYork - Usa
+                </h2>
+            </div>
+        </div>
+    </div>
+</div>
+      <!-- END_COMMENTS -->
+
+      <!-- COMMENTS  -->
+      <div class="footer">
+    <div class="container">
+        <div class="footer__top">
+            <div class="footer__top__call">
+                <div>
+                    <img src="../img/phone.png">
+                </div>
+                <h1>Call now:</h1> <a href="tel: +0800 456 789">0800 456 789</a>
+            </div>
+            <div class="footer__top__unity">
+                <img src="../img/unity.png" alt="">
+            </div>
+            <div class="footer__top__mail">
+                <div>
+                    <img src="../img/mail.png" alt="">
+                </div>
+                <h1>Mail: <span>info@unity.com</span></h1>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="footer__bottom__wrapper">
+                <h1 class="footer__bottom__center--title">
+                    Newsletter
+                </h1>
+                <div class="footer__bottom__left">
+
+                    <div class="footer__bottom__left--img">
+                        <img src="../img/women.png" alt="">
+                    </div>
+                    <div class="footer__bottom__left--content">
+                        <h1>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make</h1>
+                        <div class="footer__bottom__left--icons">
+                            <div class="icon">
+                                <img src="../img/fc.png">
+                            </div>
+                            <div class="icon">
+                                <img src="../img/ig.png">
+                            </div>
+                            <div class="icon">
+                                <img src="../img/in.png">
+                            </div>
+                            <div class="icon">
+                                <img src="../img/gg.png">
+                            </div>
+                            <div class="icon">
+                                <img src="../img/tw.png">
+                            </div>
+                            <div class="icon">
+                                <img src="../img/bl.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom__center">
+                <h1 class="footer__bottom__center--title">
+                    Newsletter
+                </h1>
+                <p class="footer__bottom__center--text">
+                    Signup for our weekly newsletter
+                    and get the latest updates
+                </p>
+                <input type="text" class="footer__bottom__center--input" placeholder="Enter Your Email">
+                <div class="footer__bottom__center--btn">
+                    <button class="btn-reset">Subscribe</button>
+                </div>
+            </div>
+            <div class="footer__bottom__right">
+                <h1 class="footer__bottom__center--title">
+                    From Blog
+                </h1>
+                <div class="footer__bottom__right--group">
+                    <div class="group">
+                        <div class="group__left">
+                            <img src="../img/blog1.png" alt="">
+                        </div>
+                        <div class="group__right">
+                            <p class="group__right--text">Needed redisugn of their site</p>
+                            <h1 class="group__right--date">Dec 25th 2011</h1>
+                        </div>
+                    </div>
+
+                    <div class="group">
+                        <div class="group__left">
+                            <img src="../img/blog2.png" alt="">
+                        </div>
+                        <div class="group__right">
+                            <p class="group__right--text">Maximise conversions and let</p>
+                            <h1 class="group__right--date">Dec 25th 2011</h1>
+                        </div>
+                    </div>
+
+                    <div class="group">
+                        <div class="group__left">
+                            <img src="../img/blog3.png" alt="">
+                        </div>
+                        <div class="group__right">
+                            <p class="group__right--text">Arts For India’s mission is  underprivileg</p>
+                            <h1 class="group__right--date">Dec 25th 2011</h1>
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+      <!-- END_COMMENTS -->
+    <script src="./js/main.min.js"></script>
+</body>
+</html>

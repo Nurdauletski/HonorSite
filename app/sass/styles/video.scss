@@ -1,0 +1,109 @@
+.video {
+    position: relative;
+    width: 100%;
+    height: 970px;
+    overflow: hidden;
+    &::before {
+        position: absolute;
+        content: '';
+        top: 50%;
+        left: 50.7%;
+        transform: translate(-50%,-50%);
+        width: 0; 
+        height: 0;
+        border: 20px solid transparent;
+        border-left: 30px solid #222;
+        z-index: 100;
+    }
+    &__media {
+        width: 100%;
+        position: absolute;
+        object-fit: cover;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+    &__image {
+        height: 970px;
+        background-color: #c4c4c5;
+        position: relative;
+        top: 0;
+        opacity: 1;
+        transition: .2s linear;
+        img {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+        &--toggle {
+            opacity: 0;
+        }
+        z-index: 2;
+    }
+    &__button {
+        position: absolute;
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        left: 50%;
+        border: 1px solid #a2a2a2;
+        background:transparent;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        z-index: 3;
+        transition:.2s linear;
+        z-index: 101;
+        &--parent {
+            position: absolute;
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            left: 50%;
+            border: 1px solid #a2a2a2;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            z-index: 2;
+            transition:.2s linear;
+            z-index: 102;
+            cursor: pointer;
+        }
+    }
+    &__text {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 150px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 870px;
+        &--title {
+            font-size: 100px;
+            color: #222;
+            margin-bottom: 13px;
+        }
+        &--descr {
+            font-family: 'Poppins';
+            font-size: 22px;
+            line-height: 2.2rem;
+            text-align: center;
+        }
+    }
+    &__box {
+        position: absolute;
+        margin-top: 180px;
+        left: 50%;
+        transform: translateX(-50%);
+        &::before {
+            content: '';
+            position: absolute;
+            width: 700px;
+            height: 700px;
+            border: 18px solid $black;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+        }
+    }
+}
